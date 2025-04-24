@@ -4,7 +4,7 @@ from .models import Todo
 from django.http import HttpResponseRedirect
 
 class IndexView(generic.ListView):
-    template_name = 'todos/base.html'
+    template_name = 'todos/index.html'
     context_object_name = 'todo_list'
 
     def get_queryset(self):
